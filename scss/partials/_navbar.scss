@@ -6,27 +6,29 @@ body > nav{
     margin:0 auto;
     width: 90%;
     padding:30px 100px;
-    background-color: #FFFFFF11;
+    //background-color: #FFFFFF11;
     transition: background-color 0.5s ease, color 0.5s ease;
     
     *{
         color: $white;
     }
     &>.main-nav{
-        width: calc(50% + 50px / 2);
+        width: calc(50% + 66px / 2);
         &>.main-links{
             gap:30px;
         }
+        
     }
     &>.extra-links{
-        width: calc(50% - 50px / 2);
+        width: calc(50% - 66px / 2);
         gap:30px;
-        a{
+        a,button{
             width: fit-content;
             svg{
-                margin: 10px;
+                margin-right: 10px;
             }
         }
+
 
         &,.f-row{
             justify-content: flex-end;
@@ -36,8 +38,9 @@ body > nav{
         button{
             background: transparent;
             border: none;
-
         }
+
+        
     }
     p{
         margin: 0;
@@ -48,6 +51,9 @@ body > nav{
         background-color: $white;
         *{
             color: $black;
+        }
+        .btn-search svg{
+            background-color: $light-grey;
         }
     }
 }

@@ -11871,6 +11871,44 @@ body {
   align-items: center;
 }
 
+.linea-links {
+  position: relative;
+  padding-bottom: 10px;
+  transition: color 140ms ease-in-out;
+}
+.linea-links:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: rgb(30, 57, 50);
+  transition: width 140ms ease-in-out;
+}
+.linea-links:hover {
+  color: rgb(30, 57, 50);
+}
+.linea-links:hover:after {
+  width: 100%;
+}
+
+button.btn-search {
+  border: 1px solid rgb(155, 155, 155) !important;
+  border-radius: 200px !important;
+  padding: 8px 10px;
+  padding-right: 50px;
+}
+button.btn-search svg {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -11884,27 +11922,26 @@ body > nav {
   margin: 0 auto;
   width: 90%;
   padding: 30px 100px;
-  background-color: rgba(255, 255, 255, 0.0666666667);
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 body > nav * {
   color: rgb(255, 255, 255);
 }
 body > nav > .main-nav {
-  width: calc(50% + 25px);
+  width: calc(50% + 33px);
 }
 body > nav > .main-nav > .main-links {
   gap: 30px;
 }
 body > nav > .extra-links {
-  width: calc(50% - 25px);
+  width: calc(50% - 33px);
   gap: 30px;
 }
-body > nav > .extra-links a {
+body > nav > .extra-links a, body > nav > .extra-links button {
   width: fit-content;
 }
-body > nav > .extra-links a svg {
-  margin: 10px;
+body > nav > .extra-links a svg, body > nav > .extra-links button svg {
+  margin-right: 10px;
 }
 body > nav > .extra-links, body > nav > .extra-links .f-row {
   justify-content: flex-end;
@@ -11922,6 +11959,9 @@ body > nav:hover {
 }
 body > nav:hover * {
   color: rgb(0, 0, 0);
+}
+body > nav:hover .btn-search svg {
+  background-color: #f2f0eb;
 }
 
 #front #front-first-block {
