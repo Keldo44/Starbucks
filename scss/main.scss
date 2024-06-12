@@ -1,0 +1,45 @@
+@import "../node_modules/bootstrap-scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+//Paleta
+$main: rgb(0, 98, 65);
+$secondary: rgb(30, 57, 50);
+$grey:rgb(155, 155, 155);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+
+
+*{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 50px;
+    color: $white;
+}
+
+body{
+    background-color: $black;
+}
+
+.f-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: $white;   
+}
+
+@import 'partials/styles';
